@@ -31,7 +31,7 @@ class _A01PageUiState extends State<A01PageUi> {
                 width: 800,
                 height: 500,
                 decoration: BoxDecoration(
-                  color: const Color.fromRGBO(245, 154, 238, 1),
+                  color: Color.fromRGBO(245, 154, 238, 1),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(100),
                     bottomRight: Radius.circular(100),
@@ -85,7 +85,7 @@ class _A01PageUiState extends State<A01PageUi> {
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromRGBO(245, 154, 238, 1),
+                        backgroundColor: Color.fromRGBO(245, 154, 238, 1),
                         foregroundColor: Colors.white,
                         padding: EdgeInsets.symmetric(vertical: 20),
                         fixedSize: Size(
@@ -119,7 +119,7 @@ class _A01PageUiState extends State<A01PageUi> {
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
-                        foregroundColor: const Color.fromARGB(255, 95, 83, 83),
+                        foregroundColor: Color.fromARGB(255, 95, 83, 83),
                         padding: EdgeInsets.symmetric(vertical: 20),
                         fixedSize: Size(
                           MediaQuery.of(context).size.width * 0.45,

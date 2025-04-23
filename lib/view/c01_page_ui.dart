@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/c02_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class C01PageUi extends StatefulWidget {
@@ -14,10 +15,18 @@ class _C01PageUiState extends State<C01PageUi> {
     return Scaffold(
       body: Stack(
         children: [
-          SizedBox.expand(
-            child: Image.asset(
-              'assets/images/imgc1.png',
-              fit: BoxFit.cover,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => C02PageUi()),
+              );
+            },
+            child: SizedBox.expand(
+              child: Image.asset(
+                'assets/images/imgc1.png',
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Positioned(

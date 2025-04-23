@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/a01_page_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -85,7 +86,10 @@ class _A02PageUiState extends State<A02PageUi> {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => A01PageUi()));
+                },
                 child: Text(
                   'Sign in',
                   style: GoogleFonts.outfit(
